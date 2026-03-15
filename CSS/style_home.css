@@ -1,0 +1,131 @@
+body{
+    font-family:  arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../IMG/985300.jpg);
+    background-size: cover;
+
+}
+
+
+header {
+    background: #0e0d1f;
+    color: #d3d3d3;
+    padding: 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /*Para centrar horizontalmente */
+}
+
+.iconopage {
+    max-width: 10%;
+    height: auto;
+    margin-right: 10px; /* Separa la imagen del texto */
+}
+
+
+/*barra de navegacion*/
+
+.navegacion {
+    background-color: #001f3f; /* Azul oscuro */
+    text-align: center; /* Centra los enlaces */
+    padding: 8px 0; /* Agrega relleno vertical */
+}
+
+.navegacion nav a {
+    color: #fff; /* Color de los enlaces (blanco) */
+    text-decoration: none; /* Elimina el subrayado */
+    padding: 10px 30px; /* Agrega relleno a los enlaces */
+    margin: 0 10px; /* Agrega márgenes a los enlaces */
+    transition: background-color 0.3s ease; /* Agrega una transición suave */
+}
+
+.navegacion nav a:hover {
+    background-color: #1a5276; /* Azul más claro al pasar el cursor */
+    color: black;
+}
+
+
+/*barra lateral derecha*/
+
+.contenedor-principal {
+    display: flex;
+}
+
+.contenido-principal {
+    flex: 3; /* Ocupa 3/4 del espacio */
+    padding: 20px;
+}
+
+.barra-lateral {
+    flex: 1;
+    background-color: rgba(14, 13, 31, 0.8);
+    padding: 20px;
+    color: #d3d3d3;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-content: flex-start;
+}
+
+.barra-lateral h3{
+    color: #8d8d8d;
+    text-align: center;
+}
+
+.barra-lateral ul li a{
+    color: #8d8d8d;
+    text-decoration: none;
+}
+
+
+.barra-lateral ul li a:hover{
+    color: #ffffff;
+}
+
+.barra-lateral img {
+    width: 100%; /* La imagen ocupa todo el ancho de la barra lateral */
+    max-width: 300px; /* Ancho máximo de la imagen */
+    height: auto; /* La altura se ajusta automáticamente */
+    margin-top: 20px; /* Agrega un margen superior para separarla del contenido anterior */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    box-shadow: 0 0 10px rgba(231, 225, 225, 0.5);
+}
+
+
+
+/*cuadros contenido principal*/
+
+.cuadro-contenido {
+    background-color: rgba(14, 13, 31, 0.8); /* Color similar al encabezado con 80% de opacidad */
+    border: 1px solid #ddd; /* Borde del cuadro */
+    padding: 25px; /* Relleno del cuadro */
+    margin-bottom: 50px; /* Margen inferior entre cuadros */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(231, 225, 225, 1);
+}
+
+.cuadro-contenido h2 {
+    color: #d3d3d3; /* Color del título */
+    margin-bottom: 10px; /* Margen inferior del título */
+    text-align: center;
+}
+
+.cuadro-contenido p {
+    color: rgb(216, 201, 201); /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+
+
+/*pie de pagina*/
+
+footer{
+    background-color: #001f3f;
+    font-family:  arial, sans-serif;
+    color: #e9e1e1;
+    padding: 1px 0;
+    text-align: center;
+}

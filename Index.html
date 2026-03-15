@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Iniciar sesión</title>
+    <link rel="short icon" href="./IMG/hollow icon.png">
+    <link rel="stylesheet" href="./CSS/style_index.css">
+</head>
+
+
+<body>
+     <!--Seccion para los items del formulario--> 
+    <div class="login-container">
+
+        <div class="login-header">
+            <img src="./IMG/hollow icon.png" alt="Logotipo de Hollow Knight">
+            <h2>Iniciar Sesion</h2>
+        </div>
+
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+        <div class="login-links">
+            <a href="#">Recuperar contraseña</a>
+            <a href="#">Crear cuenta</a>
+        </div>
+    </div>
+
+       <!--Para validar datos en el campo de formulario--> 
+
+    <script>
+        const loginForm = document.getElementById('login-form');
+
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username === 'Jeferson' && password === '123Arepa') {
+                alert('Inicio de sesión exitoso');
+                // Redirige a la página principal o realiza otras acciones
+                window.location.href = './home.html'; //Aqui coloco la direccion de la pagina; si los datos son correctos
+            } else {
+                alert('Credenciales incorrectas');
+            }
+        });
+    </script>
+</body>
+</html>
